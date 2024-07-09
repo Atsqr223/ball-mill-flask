@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Plot</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="plot"></div>
+    <script>
+        var plotData = { plot_json,safe };
+        var layout = {
+            scene: {
+                xaxis_title: 'X',
+                yaxis_title: 'Y',
+                zaxis_title: 'Z'
+            }
+        };
+        Plotly.newPlot('plot', plotData.data, layout);
+    </script>
+</body>
+</html>
